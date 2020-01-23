@@ -38,6 +38,11 @@ extern "C" {
 //! @name Transport setup
 //@{
 
+/*!
+ * @brief Create a TCP transport.
+ */
+erpc_transport_t erpc_transport_tcp_init(const char *host, uint16_t port, bool server);
+
 //! @name CMSIS UART transport setup
 //@{
 
